@@ -17,4 +17,9 @@ func main() {
 
 
     fmt.Println(i,"I reckon you're right on this one, Laura!",myboolean)
+    ohYes()
+}
+
+func ohYes(){
+  fmt.Println("I know that's right!")
 }
