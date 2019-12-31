@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "math"
 
 // this is a comment
 
@@ -8,17 +9,16 @@ import "fmt"
 
 func main() {
 
-    var i int
-    i++
-    i++
+    var i float64
+    i = 49
+
     var myboolean bool
 
     myboolean = true;
 
 
-    fmt.Println(i,"I reckon you're right on this one, Laura!",myboolean)
+    fmt.Println(i,"I reckon you're right on this one, Laura! ", myboolean, ", ", math.Sqrt(i))
     ohYes()
-    fmt.Println(add(i,i))
 }
 
 func ohYes(){
