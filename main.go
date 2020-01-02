@@ -18,11 +18,12 @@ func main() {
 
 
     fmt.Println(i,"I reckon you're right on this one, Laura! ", myboolean, ", ", math.Sqrt(i))
-    ohYes()
+    ohYes(myboolean)
+
 }
 
-func ohYes(){
-  fmt.Println("I know that's right!")
+func ohYes(var right bool){
+  fmt.Println("I know that's ",right,"!")
 }
 
 func add(i, n int)int {
