@@ -17,7 +17,7 @@ func main() {
 
     for i > 0 {
       fmt.Println(i,"I reckon you're right on this one, Laura! ")
-      i -= i
+      i --
     }
     ohYes(myboolean)
 
