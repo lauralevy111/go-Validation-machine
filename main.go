@@ -9,18 +9,30 @@ import "fmt"
 func main() {
 
     var i float64
-    i = 3
+    i = 24
 
     var myboolean bool
 
     myboolean = true;
 
-    for i > 0 {
-      fmt.Println(i,"I reckon you're right on this one, Laura! ")
-      i --
+    for i > 0 && myboolean==true{
+      //fmt.Println(i,"I reckon you're right on this one, Laura! ")
+      ohYes(myboolean)
+      myboolean = !myboolean
+      i--
     }
-    ohYes(myboolean)
+    for i > 0 && myboolean==false{
+      //fmt.Println(i,"I reckon you're right on this one, Laura! ")
+      //ohYes(myboolean)
+      ohWhat()
+      myboolean = !myboolean
+      i--
+    }
+    //ohYes(myboolean)
 
+}
+func ohWhat(){
+  fmt.Println("what do you know???")
 }
 
 func ohYes(right bool){
