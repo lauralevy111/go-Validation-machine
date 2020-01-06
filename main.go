@@ -43,3 +43,7 @@ func ohYes(right bool){
 func add(i, n int)int {
   return i + n
 }
+
+func dozenIt(a, b int) int{
+  return (a+b)*12
+}
