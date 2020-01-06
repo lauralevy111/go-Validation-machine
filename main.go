@@ -14,14 +14,9 @@ func main() {
 
     var myboolean bool
 
-    myboolean = true;
+    myboolean = false;
 
-    for i > 0 && myboolean==true{
-      //fmt.Println(i,"I reckon you're right on this one, Laura! ")
-      ohYes(myboolean)
-      myboolean = !myboolean
-      i--
-    }
+
     for i > 0 && myboolean==false{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
       //ohYes(myboolean)
@@ -29,11 +24,16 @@ func main() {
       myboolean = !myboolean
       i--
     }
-    //ohYes(myboolean)
+    for i > 0 && myboolean==true{
+      //fmt.Println(i,"I reckon you're right on this one, Laura! ")
+      ohYes(myboolean)
+      myboolean = !myboolean
+      i--
+    }
 
 }
 func ohWhat(){
-  fmt.Println("what do you know???")
+  fmt.Println("this is my MOMENT")
 }
 
 func ohYes(right bool){
