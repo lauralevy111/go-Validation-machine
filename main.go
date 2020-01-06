@@ -9,7 +9,8 @@ import "fmt"
 func main() {
 
     var i float64
-    i = 24
+    i = 38
+    //boogie woogie
 
     var myboolean bool
 
