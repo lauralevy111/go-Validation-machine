@@ -20,7 +20,6 @@ func main() {
     for i > 0 && myboolean==false{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
       //ohYes(myboolean)
-      ohWhat()
       myboolean = !myboolean
       i--
     }
@@ -31,9 +30,6 @@ func main() {
       i--
     }
 
-}
-func ohWhat(){
-  fmt.Println("this is my MOMENT")
 }
 
 func ohYes(right bool){
