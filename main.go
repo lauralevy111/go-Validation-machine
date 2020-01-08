@@ -19,7 +19,7 @@ func main() {
 
     for i > 0 && myboolean==false{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
-      //ohYes(myboolean)
+      ohYes(myboolean)
       myboolean = !myboolean
       i--
     }
@@ -33,7 +33,7 @@ func main() {
 }
 
 func ohYes(right bool){
-  fmt.Println("I know that's ",right,"!")
+  fmt.Println("oh yes huntie!"
 }
 
 func add(i, n int)int {
