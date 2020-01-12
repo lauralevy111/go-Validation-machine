@@ -22,6 +22,7 @@ func main() {
       ohYes(myboolean)
       myboolean = !myboolean
       i--
+      i--
     }
     for i > 0 && myboolean==true{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
