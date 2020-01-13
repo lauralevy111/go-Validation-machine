@@ -22,7 +22,7 @@ func main() {
       ohYes(myboolean)
       myboolean = !myboolean
       i--
-      
+
     }
     for i > 0 && myboolean==true{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
@@ -31,6 +31,10 @@ func main() {
       i--
     }
 
+}
+
+func validateValidaiton(){
+  fmt.Println("yeah good move")
 }
 
 func ohYes(right bool){
