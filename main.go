@@ -24,6 +24,7 @@ func main() {
       i--
 
     }
+    validateValidation(13)
     for i > 0 && myboolean==true{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
       ohYes(myboolean)
@@ -33,7 +34,10 @@ func main() {
 
 }
 
-func validateValidaiton(){
+func validateValidaiton(i float64){
+  for i <10{
+    fmt.Println("yeah ")
+  }
   fmt.Println("yeah good move")
 }
 
