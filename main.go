@@ -9,7 +9,9 @@ import "fmt"
 func main() {
 
     var i float64
-    i = 38
+    i = 50
+    var n float64
+    n = i+13
     //boogie woogie
 
     var myboolean bool
@@ -24,12 +26,13 @@ func main() {
       i--
 
     }
-    validateValidation(13)
+    validateValidation(n)
     for i > 0 && myboolean==true{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
       ohYes(myboolean)
 
       myboolean = !myboolean
+
       i--
     }
 
@@ -37,7 +40,7 @@ func main() {
 
 func validateValidaiton(i float64){
   for i <10{
-    fmt.Println("yeah ")
+    fmt.Println("Yeah!!!")
   }
   fmt.Println("yeah good move")
 }
