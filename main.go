@@ -26,7 +26,11 @@ func main() {
       i--
 
     }
-    validateValidation(n)
+
+    fmt.Println(n)
+
+    validateValidaiton(n)
+
     for i > 0 && myboolean==true{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
       ohYes(myboolean)
@@ -46,7 +50,7 @@ func validateValidaiton(i float64){
 }
 
 func ohYes(right bool){
-  fmt.Println("oh yes huntie!"
+  fmt.Println("oh yes huntie! she did that!")
 }
 
 func add(i, n int)int {
