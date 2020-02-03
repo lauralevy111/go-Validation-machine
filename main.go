@@ -8,9 +8,9 @@ import "fmt"
 
 func main() {
 
-    var i float64
+    var i int64
     i = 50
-    var n float64
+    var n int64
     n = i+13
     //boogie woogie
 
