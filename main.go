@@ -16,7 +16,7 @@ func main() {
 
     var myboolean bool
 
-    myboolean = false;
+    myboolean = true;
 
 
     for i > 0 && myboolean==false{
