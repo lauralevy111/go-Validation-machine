@@ -42,7 +42,7 @@ func main() {
 
 }
 
-func validateValidaiton(i float64){
+func validateValidaiton(i int64){
   for i <10{
     fmt.Println("Yeah!!!")
   }
