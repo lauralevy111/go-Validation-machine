@@ -30,6 +30,7 @@ func main() {
     fmt.Println(n)
 
     validateValidaiton(n)
+    validateValidaiton(i)
 
     for i > 0 && myboolean==true{
       //fmt.Println(i,"I reckon you're right on this one, Laura! ")
