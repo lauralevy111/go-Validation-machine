@@ -9,9 +9,9 @@ import "fmt"
 func main() {
 
     var i int
-    i = 50
+    i = 5
     var n int
-    n = i+13
+    n = i+1
     //boogie woogie
 
     var myboolean bool
@@ -30,6 +30,7 @@ func main() {
     fmt.Println(n)
 
     validateValidaiton(n)
+    fmt.Println(i)
     validateValidaiton(i)
 
     for i > 0 && myboolean==true{
