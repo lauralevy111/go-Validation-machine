@@ -8,9 +8,9 @@ import "fmt"
 
 func main() {
 
-    var i int
+    var i float64
     i = 5
-    var n int
+    var n float64
     n = i+1
     //boogie woogie
 
@@ -44,9 +44,10 @@ func main() {
 
 }
 
-func validateValidaiton(i int){
+func validateValidaiton(i float64){
   for i <10{
     fmt.Println("Yeah!!!")
+    i++
   }
   fmt.Println("yeah good move")
 }
