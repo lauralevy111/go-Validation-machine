@@ -59,7 +59,7 @@ func validateValidaiton(i float64){
 }
 
 func ohYes(right bool){
-  fmt.Println("oh yes huntie! she did that!")
+  fmt.Println("she did that!")
 }
 
 func add(i, n float64)float64 {
