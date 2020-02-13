@@ -14,6 +14,7 @@ func main() {
     n = i+1
 
     var b float64
+    fmt.Println(b)
 
     var myboolean bool
 
