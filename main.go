@@ -66,6 +66,6 @@ func add(i, n float64)float64 {
   return i + n
 }
 
-func dozenIt(a, b int) int{
+func dozenIt(a, b float64) float64{
   return (a+b)*12
 }
