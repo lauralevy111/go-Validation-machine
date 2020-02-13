@@ -17,6 +17,9 @@ func main() {
     b = add(i,n)
     fmt.Println(b)
 
+    n=dozenIt(n)
+    fmt.Println(n)
+
     var myboolean bool
 
     myboolean = true;
