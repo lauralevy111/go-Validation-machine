@@ -48,7 +48,6 @@ func validateValidaiton(i float64){
   for i <10{
     fmt.Println("Yeah!!!")
     i++
-    i++
   }
   fmt.Println("yeah good move")
 }
@@ -57,7 +56,7 @@ func ohYes(right bool){
   fmt.Println("oh yes huntie! she did that!")
 }
 
-func add(i, n int)int {
+func add(i, n float64)float64 {
   return i + n
 }
 
