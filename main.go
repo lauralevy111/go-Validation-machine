@@ -12,7 +12,8 @@ func main() {
     i = 5
     var n float64
     n = i+1
-    //boogie woogie
+
+    var b float64
 
     var myboolean bool
 
