@@ -9,9 +9,9 @@ import "fmt"
 func main() {
 
     var i float64
-    i = 5
+    i = 2
     var n float64
-    n = i+13
+    n = i+4
 
     var b float64
     b = add(i,n)
