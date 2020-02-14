@@ -17,7 +17,7 @@ func main() {
     b = add(i,n)
     fmt.Println(b)
 
-    n=dozenIt(n)
+    n=dozenIt(n,i)
     fmt.Println(n)
 
     var myboolean bool
@@ -51,15 +51,15 @@ func main() {
 }
 
 func validateValidaiton(i float64){
-  for i <10{
+  for j := i; j<=10; j++{
     fmt.Println("Yeah!!!")
-    i++
+
   }
   fmt.Println("yeah good move")
 }
 
 func ohYes(right bool){
-  fmt.Println("she did that!")
+  fmt.Println("xshe did that!")
 }
 
 func add(i, n float64)float64 {
