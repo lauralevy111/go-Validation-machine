@@ -1,10 +1,9 @@
 package main
 
-import "fmt"
-
-// this is a comment
-
-
+import (
+  "fmt"
+  "time"
+)
 
 func main() {
 
@@ -68,4 +67,11 @@ func add(i, n float64)float64 {
 
 func dozenIt(a, b float64) float64{
   return (a/b)*12
+}
+
+func whatTimeIsItUTC(name string)string {
+
+  time.Now().UTC().UnixNano()
+  return name
+
 }
