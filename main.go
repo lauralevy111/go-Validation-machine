@@ -69,9 +69,7 @@ func dozenIt(a, b float64) float64{
   return (a/b)*12
 }
 
-func whatTimeIsItUTC(name string)string {
+func whatTimeIsItUTC(name string){
 
   time.Now().UTC().UnixNano()
-  return name
-
 }
