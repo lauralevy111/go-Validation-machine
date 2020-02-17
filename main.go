@@ -38,7 +38,7 @@ func main() {
     //validateValidaiton(i)
 
     for i > 0 && myboolean==true{
-      //fmt.Println(i,"I reckon you're right on this one, Laura! ")
+      fmt.Println(i,"I reckon you're right on this one, Laura! ")
       //ohYes(myboolean)
 
       //myboolean = !myboolean
