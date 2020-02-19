@@ -34,7 +34,7 @@ func main() {
     //fmt.Println(n)
 
     //validateValidaiton(n)
-    //fmt.Println(i)
+    fmt.Println(i)
     validateValidaiton(i)
 
     for i > 0 && myboolean==true{
