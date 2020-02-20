@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-
+    var output chan float64 
     var i float64
     i = 28
     //var n float64
@@ -49,9 +49,9 @@ func main() {
         utctime = whatTimeIsItUTC()
         fmt.Println(utctime)
       }
-
-      i--
+      output <- i
     }
+    fmt.Println(output)
 
 }
 
