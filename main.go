@@ -11,15 +11,15 @@ func main() {
 
     var i float64
     i = 28
-    var n float64
-    n = i+4
+    // var n float64
+    // n = i+4
 
-    var b float64
-    b = add(i,n)
-    fmt.Println(b)
-
-    n=dozenIt(n,i)
-    fmt.Println(n)
+    // var b float64
+    // b = add(i,n)
+    // // fmt.Println(b)
+    //
+    // n=dozenIt(n,i)
+    // fmt.Println(n)
 
     var myboolean bool
     myboolean = true;
@@ -35,11 +35,11 @@ func main() {
     //fmt.Println(n)
 
     //validateValidaiton(n)
-    fmt.Println(i)
-    validateValidaiton(i)
+    // fmt.Println(i)
+    // validateValidaiton(i)
 
     for i > 0 && myboolean==true{
-      fmt.Println(i,"I reckon you're right on this one, Laura! ")
+      // fmt.Println(i,"I reckon you're right on this one, Laura! ")
       //ohYes(myboolean)
 
       //myboolean = !myboolean
@@ -51,9 +51,13 @@ func main() {
         fmt.Println(utctime)
       }
 
-      output
-      //output <- i
+      i--
     }
+    go func() {output <- i}()
+
+    out := <-output
+    fmt.Println(out)
+
     //fmt.Println(output)
 
 }
