@@ -7,18 +7,18 @@ import (
 )
 
 func main() {
-    var output chan float64 
+    var output chan float64
     var i float64
     i = 28
-    //var n float64
-    //n = i+4
+    var n float64
+    n = i+4
 
-    //var b float64
-    //b = add(i,n)
-    //fmt.Println(b)
+    var b float64
+    b = add(i,n)
+    fmt.Println(b)
 
-    //n=dozenIt(n,i)
-    //fmt.Println(n)
+    n=dozenIt(n,i)
+    fmt.Println(n)
 
     var myboolean bool
     myboolean = true;
