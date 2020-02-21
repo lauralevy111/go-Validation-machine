@@ -10,7 +10,7 @@ func main() {
     output:=make(chan float64)
 
     var i float64
-    i = 28
+    i = 10
     // var n float64
     // n = i+4
 
@@ -24,13 +24,13 @@ func main() {
     var myboolean bool
     myboolean = true;
 
-    for i > 0 && myboolean==false{
-      //fmt.Println(i,"I reckon you're right on this one, Laura! ")
-      ohYes(myboolean)
-      myboolean = !myboolean
-      i--
-
-    }
+    // for i > 0 && myboolean==false{
+    //   //fmt.Println(i,"I reckon you're right on this one, Laura! ")
+    //   ohYes(myboolean)
+    //   myboolean = !myboolean
+    //   i--
+    //
+    // }
 
     //fmt.Println(n)
 
@@ -52,8 +52,9 @@ func main() {
       }
 
       i--
+      go func() {output <- i}()
     }
-    go func() {output <- i}()
+
 
     out := <-output
     fmt.Println(out)
