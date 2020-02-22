@@ -11,8 +11,8 @@ func main() {
 
     var i float64
     i = 10
-    // var n float64
-    // n = i+4
+    var n float64
+    n = i+4
 
     // var b float64
     // b = add(i,n)
@@ -38,17 +38,18 @@ func main() {
     // fmt.Println(i)
     // validateValidaiton(i)
 
+    var utctime string
+    utctime = whatTimeIsItUTC()
+    fmt.Println(utctime)
     for i > 0 && myboolean==true{
       // fmt.Println(i,"I reckon you're right on this one, Laura! ")
       //ohYes(myboolean)
 
       //myboolean = !myboolean
 
-
       if math.Mod(i,3)==0{
-        var utctime string
-        utctime = whatTimeIsItUTC()
-        fmt.Println(utctime)
+        n=dozenIt(i,n)
+        fmt.Println(n)
       }
 
       i--
