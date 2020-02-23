@@ -11,56 +11,33 @@ func main() {
 
     var i float64
     i = 10
-    var n float64
-    n = i+4
-
-    // var b float64
-    // b = add(i,n)
-    // // fmt.Println(b)
-    //
-    // n=dozenIt(n,i)
-    // fmt.Println(n)
+    // var n float64
+    // n = i+4
 
     var myboolean bool
     myboolean = true;
 
-    // for i > 0 && myboolean==false{
-    //   //fmt.Println(i,"I reckon you're right on this one, Laura! ")
-    //   ohYes(myboolean)
-    //   myboolean = !myboolean
-    //   i--
-    //
-    // }
+    //var utctime string
+    //utctime = whatTimeIsItUTC()
+    //fmt.Println(utctime)
 
-    //fmt.Println(n)
-
-    //validateValidaiton(n)
-    // fmt.Println(i)
-    // validateValidaiton(i)
-
-    var utctime string
-    utctime = whatTimeIsItUTC()
-    fmt.Println(utctime)
     for i > 0 && myboolean==true{
-      // fmt.Println(i,"I reckon you're right on this one, Laura! ")
-      //ohYes(myboolean)
-
-      //myboolean = !myboolean
 
       if math.Mod(i,3)==0{
-        n=dozenIt(i,n)
-        fmt.Println(n)
+        // n=dozenIt(i,n)
+        // fmt.Println(n)
       }
 
       i--
       go func() {output <- i}()
     }
 
+    // var hello string
+    // hello = greeting(y(), m(), d())
 
-    out := <-output
-    fmt.Println(out)
+    greeting(y(), m(), d())
 
-    //fmt.Println(output)
+    //fmt.Println(hello)
 
 }
 
@@ -84,7 +61,7 @@ func dozenIt(a, b float64) float64{
   return (a/b)*12
 }
 
-func whatTimeIsItUTC()string{
+func whatTimeIsItUTC() string{
 
   t := (time.Now().UTC())//.UnixNano())
 
@@ -92,5 +69,37 @@ func whatTimeIsItUTC()string{
 
   outtie = t.String()
   return outtie
-  //fmt.Println(t.Format("2006-01-02 15:04:05"))
+}
+
+func y() int{
+  t := (time.Now().UTC())
+  var yearObj int
+
+  yearObj = t.Year()
+
+  return yearObj
+}
+
+func m() string{
+  t := (time.Now().UTC())
+  var monthObj time.Month
+  var monthString string
+
+  monthObj = t.Month()
+  monthString = monthObj.String()
+
+  return monthString
+}
+
+func d() int{
+  t := (time.Now().UTC())
+  var dayObj int
+
+  dayObj = t.Day()
+
+  return dayObj
+}
+
+func greeting( year int, month string, day int) {
+  fmt.Println("Hello! Today is",month,",",day,",",year," and I believe in you!")
 }
