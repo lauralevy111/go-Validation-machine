@@ -32,12 +32,12 @@ func main() {
       go func() {output <- i}()
     }
 
-    // var hello string
-    // hello = greeting(y(), m(), d())
+    var hello string
+    hello = "hello"//greeting(y(), m(), d())
 
     greeting(y(), m(), d())
 
-    //fmt.Println(hello)
+    fmt.Println(hello)
 
 }
 
