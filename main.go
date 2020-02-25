@@ -9,8 +9,8 @@ import (
 func main() {
     output:=make(chan float64)
 
-    var i float64
-    i = 10
+    //var i float64
+    i:= 10.7
     // var n float64
     // n = i+4
 
