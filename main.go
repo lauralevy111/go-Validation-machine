@@ -2,42 +2,29 @@ package main
 
 import (
   "fmt"
-  "math"
   "time"
 )
 
 func main() {
     output:=make(chan float64)
 
-    //var i float64
     i:= 10.7
-    // var n float64
-    // n = i+4
 
-    var myboolean bool
-    myboolean = true;
-
-    //var utctime string
-    //utctime = whatTimeIsItUTC()
-    //fmt.Println(utctime)
-
-    for i > 0 && myboolean==true{
-
-      if math.Mod(i,3)==0{
-        // n=dozenIt(i,n)
-        // fmt.Println(n)
-      }
+    for i > 0 {
+      go func() {output <- i}()
 
       i--
-      go func() {output <- i}()
     }
 
     var hello string
-    hello = "hello"//greeting(y(), m(), d())
+    hello = "hello"
+
+    fmt.Println(hello)
 
     greeting(y(), m(), d())
 
-    fmt.Println(hello)
+    n:=34.8
+    validateValidaiton(n)
 
 }
 
@@ -50,7 +37,7 @@ func validateValidaiton(i float64){
 }
 
 func ohYes(right bool){
-  fmt.Println("xshe did that!")
+  fmt.Println("she did that!")
 }
 
 func add(i, n float64)float64 {
@@ -101,5 +88,5 @@ func d() int{
 }
 
 func greeting( year int, month string, day int) {
-  fmt.Println("Hello! Today is",month,",",day,",",year," and I believe in you!")
+  fmt.Println("Today is",month,",",day,",",year," and I believe in you!")
 }
