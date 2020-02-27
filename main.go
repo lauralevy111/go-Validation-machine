@@ -16,10 +16,10 @@ func main() {
       i--
     }
 
-    var hello string
-    hello = "hello"
-
-    fmt.Println(hello)
+    // var hello string
+    // hello = "hello"
+    //
+    // fmt.Println(hello)
 
     greeting(y(), m(), d())
 
