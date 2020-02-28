@@ -24,8 +24,11 @@ func main() {
 
     greeting(y(), m(), d())
 
-    n:=34.8
-    validateValidaiton(math.Mod(n,34))
+
+    var n float64
+    n = 34
+    validateValidaiton(math.Mod(n,32))
+
 
 }
 
