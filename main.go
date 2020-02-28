@@ -3,6 +3,7 @@ package main
 import (
   "fmt"
   "time"
+  "math"
 )
 
 func main() {
@@ -24,7 +25,7 @@ func main() {
     greeting(y(), m(), d())
 
     n:=34.8
-    validateValidaiton(n)
+    validateValidaiton(math.Mod(n,34))
 
 }
 
