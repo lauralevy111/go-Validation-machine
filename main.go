@@ -28,7 +28,12 @@ func main() {
     var n float64
     n = 34
     validateValidaiton(math.Mod(n,dozenIt(n,n)))
-    fmt.Println(math.Pow(n,i))
+    //fmt.Println(math.Pow(n,i))
+    var power float64
+
+    power = math.Pow(n, i)
+
+    fmt.Println(power)
 
 
 }
