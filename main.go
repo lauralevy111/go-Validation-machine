@@ -33,7 +33,11 @@ func main() {
 
     power = math.Pow(n, i)
 
-    fmt.Println(power)
+    //fmt.Println(power)
+
+    for b:=power; b<=20; b++{
+      good()
+    }
 
 
 }
@@ -56,6 +60,10 @@ func add(i, n float64)float64 {
 
 func dozenIt(a, b float64) float64{
   return (a/b)*12
+}
+
+func good(){
+  fmt.Println("you ROCK!")
 }
 
 func whatTimeIsItUTC() string{
