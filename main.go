@@ -36,7 +36,9 @@ func main() {
     //fmt.Println(power)
 
     for b:=power; b<=20; b++{
+      fmt.Println("u no what????")
       good()
+
     }
 
 
