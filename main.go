@@ -9,7 +9,7 @@ import (
 func main() {
     output:=make(chan float64)
 
-    i:= 10.7
+    i:= 2.2
 
     for i > 0 {
       go func() {output <- i}()
@@ -24,9 +24,8 @@ func main() {
 
     greeting(y(), m(), d())
 
-
     var n float64
-    n = 34
+    n = 22
     validateValidaiton(math.Mod(n,dozenIt(n,n)))
     //fmt.Println(math.Pow(n,i))
     var power float64
@@ -36,7 +35,7 @@ func main() {
     //fmt.Println(power)
 
     for b:=power; b<=20; b++{
-      fmt.Println("u no what????")
+      fmt.Println("i have to tell u something ESSENTAIL!")
       good()
 
     }
