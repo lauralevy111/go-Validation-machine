@@ -35,7 +35,7 @@ func main() {
     //fmt.Println(power)
 
     for b:=power; b<=n; b++{
-      fmt.Println("i have to tell u something ESSENTAIL!")
+      fmt.Println("i have to tell u something !")
       good()
 
     }
