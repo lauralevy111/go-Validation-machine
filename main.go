@@ -35,12 +35,23 @@ func main() {
     //fmt.Println(power)
 
     for b:=power; b<=n; b++{
-      fmt.Println("i have to tell u something !")
+      fmt.Println("i have to tell u something!")
       good()
 
     }
 
+    p,q := learnMemory()
+    fmt.Println("p:",*p,"q:", *q)
 
+
+}
+
+func learnMemory()(p,q *int){
+  p = new(int)
+  s:=make([]int, 20)
+  s[3] = 7
+  r:=-2
+  return &s[3], &r
 }
 
 func validateValidaiton(i float64){
