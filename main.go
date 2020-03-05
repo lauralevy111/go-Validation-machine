@@ -43,6 +43,7 @@ func main() {
     p,q := learnMemory()
     fmt.Println("address of p:",p,"address of q: ", q)
 
+    fmt.Println("p:",*p,"q:", *q)
 
 
 }
