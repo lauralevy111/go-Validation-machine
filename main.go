@@ -28,22 +28,22 @@ func main() {
     n = 2.0
     validateValidaiton(math.Mod(n,dozenIt(n,n)))
     //fmt.Println(math.Pow(n,i))
-    var power float64
-
-    power = math.Pow(n, i)
+    // var power float64
+    //
+    // power = math.Pow(n, i)
 
     //fmt.Println(power)
 
-    for b:=power; b<=n; b++{
-      fmt.Println("i have to tell u something!")
-      good()
+    // for b:=power; b<=n; b++{
+    //   fmt.Println("i have to tell u something!")
+    //   good()
 
-    }
-
-    p,q := learnMemory()
-    fmt.Println("address of p:",p,"address of q: ", q)
-
-    fmt.Println("value of p:",*p,"value of q:", *q)
+    //}
+    //
+    // p,q := learnMemory()
+    // fmt.Println("address of p:",p,"address of q: ", q)
+    //
+    // fmt.Println("value of p:",*p,"value of q:", *q)
 
 
 }
