@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
+
+  fmt.Println("heyo buddy!")
+  
     output:=make(chan float64)
 
     i:= 2.0
