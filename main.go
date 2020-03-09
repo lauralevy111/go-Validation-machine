@@ -124,4 +124,8 @@ func d() int{
 
 func greeting( year int, month string, day int) {
   fmt.Println("Today is",month,",",day,",",year," and I believe in you!")
+
+  for i:=day; i<=0;i--{
+    fmt.Println("you can do it!")
+  }
 }
