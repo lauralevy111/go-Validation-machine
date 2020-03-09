@@ -9,7 +9,7 @@ import (
 func main() {
 
   fmt.Println("heyo buddy!")
-  
+
     output:=make(chan float64)
 
     i:= 2.0
@@ -20,10 +20,10 @@ func main() {
       i--
     }
 
-    // var hello string
-    // hello = "hello"
+    var hello string
+    hello = "hello"
     //
-    // fmt.Println(hello)
+    fmt.Println(hello)
 
     greeting(y(), m(), d())
 
