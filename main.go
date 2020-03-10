@@ -10,12 +10,15 @@ func main() {
 
   fmt.Println("heyo buddy!")
 
+      var n float64
+      n = 2.0
+
     output:=make(chan float64)
 
     i:= 2.0
 
     for i > 0 {
-      go func() {output <- i}()
+      go func() {output <- dozenIt(i,n)}()
 
       i--
     }
@@ -27,8 +30,6 @@ func main() {
 
     greeting(y(), m(), d())
 
-    var n float64
-    n = 2.0
     validateValidaiton(math.Mod(n,dozenIt(n,n)))
     //fmt.Println(math.Pow(n,i))
     // var power float64
