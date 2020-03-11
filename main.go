@@ -18,7 +18,7 @@ func main() {
     i:= 2.0
 
     for i > 0 {
-      go func() {output <- dozenIt(i,n)}()
+      go func() {output <- dozenIt(i,4.4)}()
 
       i--
     }
