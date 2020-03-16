@@ -18,7 +18,7 @@ func main() {
     i:= 2.0
 
     for i > 0 {
-      go func() {output <- dozenIt(i,4.1111)}()
+      go func() {output <- dozenIt(i)}()
 
       i--
     }
@@ -76,8 +76,8 @@ func add(i, n float64)float64 {
   return i + n
 }
 
-func dozenIt(a, b float64) float64{
-  return (a/b)*12
+func dozenIt(a float64) float64{
+  return (a)*12
 }
 
 func good(){
