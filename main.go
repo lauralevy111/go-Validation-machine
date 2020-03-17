@@ -30,7 +30,7 @@ func main() {
 
     greeting(y(), m(), d())
 
-    validateValidaiton(math.Mod(n,dozenIt(n,n)))
+    validateValidaiton(math.Mod(n,dozenIt(n)))
     //fmt.Println(math.Pow(n,i))
     // var power float64
     //
@@ -44,10 +44,10 @@ func main() {
 
     //}
     //
-    // p,q := learnMemory()
-    // fmt.Println("address of p:",p,"address of q: ", q)
-    //
-    // fmt.Println("value of p:",*p,"value of q:", *q)
+    p,q := learnMemory()
+    fmt.Println("address of p:",p,"address of q: ", q)
+
+    fmt.Println("value of p:",*p,"value of q:", *q)
 
 
 }
