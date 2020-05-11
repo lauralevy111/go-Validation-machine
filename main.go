@@ -45,7 +45,7 @@ func main() {
     //}
     //
     p,q := learnMemory()
-    fmt.Println("address of p:",p,"address of q: ", q)
+    //fmt.Println("address of p:",p,"address of q: ", q)
 
     fmt.Println("value of p:",*p,"value of q:", *q)
 
